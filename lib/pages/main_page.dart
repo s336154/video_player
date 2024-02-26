@@ -1,6 +1,8 @@
 import 'package:video_player/pages/home_page.dart';
 import 'package:video_player/pages/settings_page.dart';
-import 'package:video_player/pages/video_player_page.dart';
+import 'package:video_player/pages/career_page.dart';
+import 'package:video_player/pages/language_page.dart';
+import 'package:video_player/pages/health_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -13,8 +15,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   final List<Widget> pages = [
     const HomePage(),
-    const VideoPlayerPage(),
+    const CareerPage(),
+    const HealthPage(),
     const SettingsPage(),
+    LanguagePage(),
   ];
 
   int currentPage = 0;
@@ -39,15 +43,27 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.video_file,
+              Icons.work,
             ),
-            label: "Video",
+            label: "Career",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.health_and_safety,
+            ),
+            label: "Health",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.settings,
             ),
             label: "Settings",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.language,
+            ),
+            label: "Language",
           ),
         ],
       ),

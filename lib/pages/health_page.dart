@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 enum Source { Asset, Network }
 
-class VideoPlayerPage extends StatefulWidget {
-  const VideoPlayerPage({Key? key}) : super(key: key);
+class HealthPage extends StatefulWidget {
+  const HealthPage({Key? key}) : super(key: key);
 
   @override
-  State<VideoPlayerPage> createState() => _VideoPlayerPageState();
+  State<HealthPage> createState() => _VideoPlayerPageState();
 }
 
-class _VideoPlayerPageState extends State<VideoPlayerPage> {
+class _VideoPlayerPageState extends State<HealthPage> {
   late CustomVideoPlayerController _customVideoPlayerController;
 
   Source currentSource = Source.Asset;
