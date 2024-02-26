@@ -6,6 +6,10 @@ class LocaleString extends Translations{
   Map<String, Map<String, String>> get keys => {
     //ENGLISH LANGUAGE
     'en_UK':{
+      'confirm' : 'Confirm',
+      'welcome': 'Welcome to VO',
+      'select_language': 'Select a Language',
+      'life_mastery_app' : 'Life Mastery App',
       'language' : 'Language',
       'health': 'Health',
       'career' : 'Career',
@@ -59,6 +63,10 @@ class LocaleString extends Translations{
     },
     //Somali
     'so_SO':{
+      'ok' : 'Ok',
+      'welcome': 'Ku soo dhawoow VO',
+      'select_language': 'Dooro Luuqad',
+      'life_mastery_app' : 'Codsiga Aqoonta Nolosha',
       'language' : 'Luuqad',
       'health': 'Caafimaadka',
       'career' : 'Xirfad',
@@ -113,6 +121,10 @@ class LocaleString extends Translations{
 
     //Arabic
     'ar_AR':{
+      'ok' : 'اوكي',
+      'welcome': 'مرحبًا بك في VO',
+      'select_language': 'اختر لغة',
+      'life_mastery_app' : 'تطبيق إتقان الحياة',
       'language' : 'لغة',
       'health': 'صحة',
       'career' : 'مهنة',
@@ -167,6 +179,10 @@ class LocaleString extends Translations{
 
     //Norwegian
     'nb_NO':{
+      'ok' : 'Ok',
+      'welcome': 'Velkommen til VO',
+      'select_language': 'Velg Språk',
+      'life_mastery_app' : 'Livsmestring App',
       'language' : 'Språk',
       'health': 'Helse',
       'career' : 'Karriere',
@@ -220,6 +236,10 @@ class LocaleString extends Translations{
     },
     //Spanish
     'es_ES':{
+      'ok' : 'De acuerdo',
+      'welcome': 'Bienvenido a VO',
+      'select_language': 'Seleccione el Idioma',
+      'life_mastery_app' : 'Aplicación De Dominio De La Vida',
       'language' : 'Idioma',
       'health': 'Salud',
       'career' : 'Carrera',
@@ -274,6 +294,10 @@ class LocaleString extends Translations{
 
     // Tigrinya
     'ti_ET':{
+      'ok' : 'እሺ',
+      'welcome': 'እንቋዕ ናብ VO ብደሓን መጻእኩም',
+      'select_language': 'ቋንቋ ምረጽ',
+      'life_mastery_app' : 'ናይ ህይወት ምልከት መተግበሪ',
         'language' : 'ቋንቋ',
         'health': 'ጥዕና',
         'career' : 'ሞያ',
@@ -330,6 +354,10 @@ class LocaleString extends Translations{
 
     // Dari
     'prs_AF':{
+      'ok' : 'Ok',
+      'welcome': 'Welcome to VO',
+      'select_language': 'Select a Language',
+      'life_mestry' : 'Life Mestry',
       'language' : 'Language',
         'health': 'د صحت',
         'career' : 'حیاتي کار',
@@ -386,6 +414,10 @@ class LocaleString extends Translations{
 
     // Persian
     'fa_IR':{
+      'ok' : 'خوب',
+      'welcome': 'به VO خوش آمدید',
+      'select_language': 'زبان را انتخاب کنید',
+      'life_mastery_app' : 'برنامه تسلط زندگی',
       'language' : 'زبان',
       'health': 'سلامتی',
       'career' : 'حرفه',
@@ -441,6 +473,10 @@ class LocaleString extends Translations{
 
     // Urdu
     'ur_PK':{
+      'ok' : 'ٹھیک ہے',
+      'welcome': 'VO میں خوش آمدید',
+      'select_language': 'زبان منتخب کریں۔',
+      'life_mastery_app' : 'لائف ماسٹری ایپلی کیشن',
       'language' : 'زبان',
       'health': 'صحت',
       'career' : 'کیریئر',
@@ -497,6 +533,10 @@ class LocaleString extends Translations{
 
     // Swahili
     'sw_KE':{
+      'ok' : 'Sawa',
+      'welcome': 'Karibu kwenye VO',
+      'select_language': 'Chagua Lugha',
+      'life_mastery_app' : 'Maombi ya Umahiri wa Maisha',
       'language' : 'Lugha',
       'health': 'Afya',
       'career' : 'Kazi',
@@ -551,6 +591,10 @@ class LocaleString extends Translations{
 
     // Ukranian
     'uk_UA':{
+      'ok' : 'В порядку',
+      'welcome': 'Ласкаво просимо до VO',
+      'select_language': 'Оберіть мову',
+      'life_mastery_app' : 'Додаток Life Mastery',
       'language' : 'Мова',
       'health': 'Здоровя',
       'career' : 'Карєра',
