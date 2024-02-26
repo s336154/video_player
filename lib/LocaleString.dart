@@ -6,7 +6,7 @@ class LocaleString extends Translations{
   Map<String, Map<String, String>> get keys => {
     //ENGLISH LANGUAGE
     'en_UK':{
-      'confirm' : 'Confirm',
+      'ok' : 'Ok',
       'welcome': 'Welcome to VO',
       'select_language': 'Select Language',
       'life_mastery_app' : 'Life Mastery App',
