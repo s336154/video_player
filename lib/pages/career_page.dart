@@ -1,5 +1,6 @@
 import 'package:appinio_video_player/appinio_video_player.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 enum Source { Asset, Network }
 
@@ -35,17 +36,38 @@ class _VideoPlayerPageState extends State<CareerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('career'.tr),
+      ),
       body: isLoading
           ? const Center(
         child: CircularProgressIndicator(
           color: Colors.red,
         ),
       )
-          : CustomVideoPlayer(
-        customVideoPlayerController: _customVideoPlayerController,
-      ),
+          : Center(
+            child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'career'.tr, // Your video title here
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            CustomVideoPlayer(
+              customVideoPlayerController: _customVideoPlayerController,
+            ),
+                    ],
+                  ),
+          ),
     );
   }
+
 
   void initializeVideoPlayer(Source source) {
     setState(() {

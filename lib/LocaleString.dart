@@ -8,7 +8,7 @@ class LocaleString extends Translations{
     'en_UK':{
       'confirm' : 'Confirm',
       'welcome': 'Welcome to VO',
-      'select_language': 'Select a Language',
+      'select_language': 'Select Language',
       'life_mastery_app' : 'Life Mastery App',
       'language' : 'Language',
       'health': 'Health',

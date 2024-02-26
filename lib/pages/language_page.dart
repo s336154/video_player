@@ -26,7 +26,7 @@ class LanguagePage extends StatelessWidget {
     showDialog(context: context,
         builder: (builder){
           return AlertDialog(
-            title: Text('Select Language'.tr),
+            title: Text('select_language'.tr),
             content: Container(
               width: double.maxFinite,
               child: ListView.separated(
@@ -55,19 +55,23 @@ class LanguagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text('welcome'.tr),),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('hello'.tr,style: TextStyle(fontSize: 15),),
-            SizedBox(height: 10,),
-            Text('message'.tr,style: TextStyle(fontSize: 20),),
-            SizedBox(height: 10,),
-            Text('subscribe'.tr,style: TextStyle(fontSize: 20),),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('welcome'.tr,style: TextStyle(fontSize: 15),),
+                SizedBox(height: 10,),
+                Text('life_mastery_app'.tr,style: TextStyle(fontSize: 20),),
 
-            ElevatedButton(onPressed: (){
-              buildLanguageDialog(context);
-            }, child: Text('changelang'.tr)),
-          ],
+
+                ElevatedButton(onPressed: (){
+                  buildLanguageDialog(context);
+                }, child: Text('select_language'.tr)),
+              ],
+            ),
+          ),
         )
     );
   }

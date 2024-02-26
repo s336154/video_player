@@ -4,9 +4,10 @@ import 'package:video_player/pages/career_page.dart';
 import 'package:video_player/pages/language_page.dart';
 import 'package:video_player/pages/health_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+  const MainPage({Key? key});
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -34,36 +35,39 @@ class _MainPageState extends State<MainPage> {
             currentPage = value;
           });
         },
-        items: const [
+        backgroundColor: Colors.white, // Set background color here
+        selectedItemColor: Colors.blue, // Set selected item color if needed
+        unselectedItemColor: Colors.grey, // Set unselected item color if needed
+        items:  [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
             ),
-            label: "Home",
+            label: 'home'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.work,
             ),
-            label: "Career",
+            label: 'career'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.health_and_safety,
             ),
-            label: "Health",
+            label: 'health'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.settings,
             ),
-            label: "Settings",
+            label: 'settings'.tr,
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.language,
             ),
-            label: "Language",
+            label: 'language'.tr,
           ),
         ],
       ),
